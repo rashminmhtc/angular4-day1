@@ -1,9 +1,9 @@
 <div class="mainContent">
-  <ul *ngIf="peoplesList.length > 0; else loading">
+  <ol *ngIf="peoplesList.length > 0; else loading">
     <strong><span>Names</span> <span>(Date of Birth)</span> - <span>Phone Number</span></strong>
     <li *ngFor="let friend of peoplesList">  
       <span>{{friend.name}}</span> <span>({{friend.dob}})</span> - <span>{{friend.phone}}</span>
     </li>
-  </ul>
+  </ol>
   <ng-template #loading>No cities found</ng-template>
 </div>

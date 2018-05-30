@@ -3,7 +3,15 @@
   <h1>
     Welcome to my personal {{ title }}!
   </h1>
-  <router-outlet></router-outlet>
+  <div>
+    <h3>Navigation:</h3>
+    <ul>
+      <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
+      <li><a [routerLink]="['/people']">People</a></li>
+    </ul>
+    <br>
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
 
